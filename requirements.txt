@@ -1,0 +1,55 @@
+# -----------------------------------------------------------------------
+# Core audio processing
+# -----------------------------------------------------------------------
+
+# Microphone capture and audio playback
+sounddevice>=0.4.6
+
+# -----------------------------------------------------------------------
+# Voice Activity Detection
+# -----------------------------------------------------------------------
+
+# Silero VAD model is loaded via torch.hub at runtime
+torch>=2.0.0
+torchaudio>=2.0.0
+
+# -----------------------------------------------------------------------
+# Speech recognition
+# -----------------------------------------------------------------------
+
+# faster-whisper – CTranslate2-based Whisper implementation
+faster-whisper>=1.0.0
+
+# -----------------------------------------------------------------------
+# Translation
+# -----------------------------------------------------------------------
+
+# HuggingFace Transformers for NLLB-200
+transformers>=4.35.0
+sentencepiece>=0.1.99        # required by NLLB tokeniser
+protobuf>=3.20.0             # required by sentencepiece
+accelerate>=0.24.0           # speeds up model loading
+
+# -----------------------------------------------------------------------
+# Text-to-Speech
+# -----------------------------------------------------------------------
+
+# Piper TTS (recommended – fast, local, CPU-friendly neural TTS)
+piper-tts>=1.2.0
+
+# pyttsx3 as a zero-configuration fallback
+pyttsx3>=2.90
+
+# -----------------------------------------------------------------------
+# Optional: LLM reasoning layer
+# -----------------------------------------------------------------------
+# Uncomment the line below to enable the optional LLM post-processing step.
+# You will also need a GGUF model file (see README for details).
+#
+# llama-cpp-python>=0.2.50
+
+# -----------------------------------------------------------------------
+# Utilities
+# -----------------------------------------------------------------------
+
+numpy>=1.24.0
